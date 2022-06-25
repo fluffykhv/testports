@@ -20,7 +20,7 @@ PORTDOCS=	*
 OPTIONS_DEFINE=	GIR DOCS
 OPTIONS_DEFAULT=GIR
 OPTIONS_SUB=	yes
-MESON_ARGS=	-Dgtk_doc=disabled
+#MESON_ARGS=	-Dgtk_doc=disabled
 
 BINARY_ALIAS=	python3=${PYTHON_CMD}
 
@@ -35,7 +35,7 @@ DOCS_BUILD_DEPENDS=	\
 			${PYTHON_PKGNAMEPREFIX}typogrify>0:textproc/py-typogrify@${PY_FLAVOR}
 
 DOCS_MESON_ENABLED=	gtk_doc
-GIR_DESC=	Build introspection dataOC
+GIR_DESC=	Build introspection data
 GIR_USE=	gnome=introspection
 GIR_MESON_ENABLED=	introspection
 
