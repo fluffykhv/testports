@@ -1,9 +1,9 @@
-# Created by: ada@bsd.org
 PORTNAME=	freeciv
-PORTVERSION=	3.0.1
+PORTVERSION=	3.0.2
 CATEGORIES=	games
 MASTER_SITES=	SF/freeciv/Freeciv%20${PORTVERSION:R}/${PORTVERSION} \
 		http://files.freeciv.org/stable/
+
 MAINTAINER=	fluffy@FreeBSD.org
 COMMENT=	Free turn-based multiplayer strategy
 
