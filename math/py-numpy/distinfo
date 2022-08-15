@@ -1,6 +1,6 @@
-TIMESTAMP = 1657644190
-SHA256 (numpy-1.23/numpy-1.23.1.tar.gz) = d748ef349bfef2e1194b59da37ed5a29c19ea8d7e6342019921ba2ba4fd8b624
-SIZE (numpy-1.23/numpy-1.23.1.tar.gz) = 10716841
+TIMESTAMP = 1660596260
+SHA256 (numpy-1.23/numpy-1.23.2.tar.gz) = b78d00e48261fbbd04aa0d7427cf78d18401ee0abd89c7559bbf422e5b1c7d01
+SIZE (numpy-1.23/numpy-1.23.2.tar.gz) = 10719306
 SHA256 (numpy-1.23/numpy-ref.pdf) = f493c1cae879a4e0038bec400d349fc34aafa164e1462118bdf18b25a3a07daf
 SIZE (numpy-1.23/numpy-ref.pdf) = 7715485
 SHA256 (numpy-1.23/numpy-user.pdf) = 3978da15c6a1b00f2737c75458db0cc0fe636ae90b72723a8ff609d40e9b7599
