@@ -39,7 +39,7 @@ USE_QT+=	webengine
 PLIST_SUB=	WEBENGINE="@comment "
 .endif
 
-PLIST_SUB+=	ARCH=${ARCH:S/amd64/x86_64/:C/armv./arm/} \
+PLIST_SUB+=	ARCH=${ARCH:S/amd64/x86_64/:S/i386/i686/:C/armv./arm/} \
 		PORTMAJMIN=${PORTVERSION:C/(.*)\..*/\1/} \
 		PORTVERSION=${PORTVERSION} \
 		QTVER=${QT5_VERSION:C/\./_/:C/\..*//}
