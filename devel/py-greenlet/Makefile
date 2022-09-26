@@ -1,13 +1,14 @@
 # Created by: Peter Schuller <peter.schuller@infidyne.com>
 
 PORTNAME=	greenlet
-DISTVERSION=	2.0.0a2
+DISTVERSION=	1.1.3
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Light-weight microthreads for Python
+WWW=		https://github.com/python-greenlet/greenlet
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
