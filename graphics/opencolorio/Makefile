@@ -1,6 +1,6 @@
 PORTNAME=	opencolorio
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.2.0
+DISTVERSION=	2.2.1
 # PORTREVISION must be set with ?= so as not to stomp over
 # py-opencolorio's PORTREVISION.
 # Also, just to be on the safe side, when resetting,
@@ -27,6 +27,8 @@ USES=		alias cmake compiler:c++14-lang localbase:ldflags \
 USE_GITHUB=	yes
 GH_ACCOUNT=	AcademySoftwareFoundation
 GH_PROJECT=	OpenColorIO
+
+#GH_TUPLE+=	madler:zlib:v1.2.13:zlib/ext/dist/zlib
 
 CMAKE_OFF=	OCIO_BUILD_JAVA OCIO_BUILD_JNIGLUE OCIO_BUILD_NUKE \
 		OCIO_BUILD_TESTS OCIO_BUILD_GPU_TESTS
