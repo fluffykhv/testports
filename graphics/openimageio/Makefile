@@ -18,10 +18,11 @@ BUILD_DEPENDS=	${LOCALBASE}/include/tsl/robin_map.h:devel/robin-map
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 		libfmt.so:devel/libfmt \
 		libhdf5.so:science/hdf5 \
-		libheif.so:graphics/libheif \
 		libImath.so:math/Imath \
 		libOpenColorIO.so:graphics/opencolorio \
 		libOpenEXR.so:graphics/openexr \
+		libheif.so:graphics/libheif \
+		libturbojpeg.so:graphics/libjpeg-turbo \
 		libpng.so:graphics/png \
 		libsquish.so:graphics/squish \
 		libtiff.so:graphics/tiff \
@@ -102,7 +103,9 @@ SHL2=		${PORTVERSION:R:R}
 SHL1=		${PORTVERSION:R:R:R}
 
 post-patch:
-	@${REINPLACE_CMD} -e "s,%%LOCALBASE%%,${LOCALBASE}," ${WRKSRC}/src/cmake/modules/FindPtex.cmake
+	@${REINPLACE_CMD} -e "s,%%LOCALBASE%%,${LOCALBASE}," \
+	${WRKSRC}/src/cmake/modules/FindPtex.cmake \
+	${WRKSRC}/src/cmake/modules/FindJPEGTurbo.cmake
 
 .include <bsd.port.options.mk>
 
