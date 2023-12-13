@@ -1,6 +1,5 @@
 PORTNAME=	blender
-DISTVERSION=	3.6.1
-PORTREVISION=	6
+DISTVERSION=	3.6.7
 CATEGORIES=	graphics multimedia
 MASTER_SITES=	http://download.blender.org/source/ \
 		http://mirror.cs.umn.edu/blender.org/source/ \
@@ -43,6 +42,7 @@ CFLAGS+=	${CFLAGS_${CHOSEN_COMPILER_TYPE}}
 CFLAGS_gcc=	-Wno-float-conversion
 CFLAGS_i386=	-march=i586
 CXXFLAGS_i386=	-march=i586
+LDFLAGS+=	-lexecinfo
 
 PLIST_SUB+=	VER=${DISTVERSION:R}
 OPTIONS_SUB=	yes
