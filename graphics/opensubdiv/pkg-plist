@@ -63,6 +63,8 @@ include/opensubdiv/osd/nonCopyable.h
 @comment include/opensubdiv/osd/ompKernel.h
 %%OPENCL%%include/opensubdiv/osd/opencl.h
 include/opensubdiv/osd/opengl.h
+include/opensubdiv/osd/patchBasis.h
+include/opensubdiv/osd/patchBasisTypes.h
 %%TBB%%include/opensubdiv/osd/tbbEvaluator.h
 %%TBB%%include/opensubdiv/osd/tbbKernel.h
 include/opensubdiv/osd/types.h
