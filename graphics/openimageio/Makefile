@@ -1,11 +1,11 @@
 PORTNAME=	openimageio
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.4.13.0
+DISTVERSION=	2.5.6.0
 # PORTREVISION must be set with ?= so as not to stomp over
 # py-openimageio's PORTREVISION.
 # Also, just to be on the safe side, when resetting,
 # best keep PORTREVISION?=	0.
-PORTREVISION?=	5
+PORTREVISION?=	0
 CATEGORIES?=	graphics multimedia
 
 MAINTAINER?=	FreeBSD@Shaneware.biz
@@ -33,8 +33,8 @@ USES=		cmake jpeg compiler:c++14-lang iconv:wchar_t qt:5
 USE_QT+=	buildtools:build qmake:build
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	OpenImageIO
-GH_PROJECT=	oiio
+GH_ACCOUNT=	AcademySoftwareFoundation
+GH_PROJECT=	OpenImageIO
 
 CMAKE_OFF=	BUILDSTATIC INSTALL_FONTS LINKSTATIC NOTHREADS \
 		STOP_ON_WARNING USE_OPENSSL OIIO_DOWNLOAD_MISSING_TESTDATA \
@@ -104,8 +104,7 @@ SHL1=		${PORTVERSION:R:R:R}
 
 post-patch:
 	@${REINPLACE_CMD} -e "s,%%LOCALBASE%%,${LOCALBASE}," \
-	${WRKSRC}/src/cmake/modules/FindPtex.cmake \
-	${WRKSRC}/src/cmake/modules/FindJPEGTurbo.cmake
+	${WRKSRC}/src/cmake/modules/FindPtex.cmake
 
 .include <bsd.port.options.mk>
 
