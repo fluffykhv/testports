@@ -1,4 +1,3 @@
-include/minizip-ng/ioapi.h
 include/minizip-ng/mz.h
 include/minizip-ng/mz_compat.h
 include/minizip-ng/mz_crypt.h
@@ -23,6 +22,6 @@ lib/cmake/minizip-ng/minizip-ng-config.cmake
 lib/cmake/minizip-ng/minizip-ng-%%CMAKE_BUILD_TYPE%%.cmake
 lib/cmake/minizip-ng/minizip-ng.cmake
 lib/libminizip-ng.so
-lib/libminizip-ng.so.1
-lib/libminizip-ng.so.%%SHLIBVER%%
+lib/libminizip-ng.so.3
+lib/libminizip-ng.so.3.0.8
 libdata/pkgconfig/minizip-ng.pc
